@@ -1,0 +1,417 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Bootstrap Grid System</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+
+</head>
+
+<body class="bg-light">
+
+    <!-- ==================================================
+         HEADER
+    =================================================== -->
+
+    <header class="bg-primary text-white text-center py-4">
+
+        <div class="container">
+
+            <h1 class="fw-bold mb-2">
+                Bootstrap Grid System
+            </h1>
+
+            <p class="mb-0">
+                Bài tập thiết kế bố cục responsive bằng Bootstrap
+            </p>
+
+        </div>
+
+    </header>
+
+    <!-- ==================================================
+         NAVBAR
+    =================================================== -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+        <div class="container">
+
+            <a
+                class="navbar-brand fw-bold"
+                href="#">
+
+                MyWebsite
+
+            </a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div
+                class="collapse navbar-collapse"
+                id="navbarNav">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link active"
+                            aria-current="page"
+                            href="#home">
+
+                            Trang Chủ
+
+                        </a>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="#about">
+
+                            Giới Thiệu
+
+                        </a>
+
+                    </li>
+
+                    <li class="nav-item dropdown">
+
+                        <a
+                            class="nav-link dropdown-toggle"
+                            href="#"
+                            role="button"
+                            data-bs-toggle="dropdown"
+                            aria-expanded="false">
+
+                            Dịch Vụ
+
+                        </a>
+
+                        <ul class="dropdown-menu">
+
+                            <li>
+                                <a
+                                    class="dropdown-item"
+                                    href="#service1">
+
+                                    Thiết kế Website
+
+                                </a>
+                            </li>
+
+                            <li>
+                                <a
+                                    class="dropdown-item"
+                                    href="#service2">
+
+                                    Marketing Online
+
+                                </a>
+                            </li>
+
+                            <li>
+                                <a
+                                    class="dropdown-item"
+                                    href="#service3">
+
+                                    Hỗ trợ kỹ thuật
+
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </li>
+
+                    <li class="nav-item">
+
+                        <a
+                            class="nav-link"
+                            href="#contact">
+
+                            Liên Hệ
+
+                        </a>
+
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- ==================================================
+         MAIN
+    =================================================== -->
+
+    <main
+        id="home"
+        class="container py-5">
+
+        <div class="row g-4">
+
+            <!-- ==========================================
+                 MAIN CONTENT
+            =========================================== -->
+
+            <section class="col-12 col-lg-8">
+
+                <div class="bg-white p-4 rounded shadow-sm">
+
+                    <h2 class="text-primary fw-bold mb-3">
+                        Main Content
+                    </h2>
+
+                    <p class="text-secondary">
+
+                        Đây là khu vực nội dung chính của trang web.
+                        Trên màn hình lớn, phần này chiếm 8 cột
+                        trong hệ thống 12 cột của Bootstrap.
+
+                    </p>
+
+                    <hr>
+
+                    <section id="about" class="mb-4">
+
+                        <h3 class="h4 fw-bold">
+                            Giới thiệu
+                        </h3>
+
+                        <p class="text-secondary">
+
+                            Bootstrap Grid System sử dụng container,
+                            row và các class col-* để xây dựng bố cục
+                            responsive.
+
+                        </p>
+
+                    </section>
+
+                    <!-- ==================================
+                         SERVICES
+                    =================================== -->
+
+                    <h3 class="h4 fw-bold mb-3">
+                        Dịch vụ nổi bật
+                    </h3>
+
+                    <div class="row g-3">
+
+                        <div
+                            id="service1"
+                            class="col-12 col-md-6">
+
+                            <div class="card h-100">
+
+                                <div class="card-body">
+
+                                    <h4 class="h5 text-primary">
+                                        Thiết kế Website
+                                    </h4>
+
+                                    <p class="card-text text-secondary">
+
+                                        Xây dựng website responsive,
+                                        hiện đại và dễ sử dụng.
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div
+                            id="service2"
+                            class="col-12 col-md-6">
+
+                            <div class="card h-100">
+
+                                <div class="card-body">
+
+                                    <h4 class="h5 text-success">
+                                        Marketing Online
+                                    </h4>
+
+                                    <p class="card-text text-secondary">
+
+                                        Hỗ trợ doanh nghiệp tiếp cận
+                                        khách hàng trên nền tảng số.
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div
+                            id="service3"
+                            class="col-12">
+
+                            <div class="card h-100">
+
+                                <div class="card-body">
+
+                                    <h4 class="h5 text-danger">
+                                        Hỗ trợ kỹ thuật
+                                    </h4>
+
+                                    <p class="card-text text-secondary">
+
+                                        Hỗ trợ xử lý các vấn đề kỹ thuật
+                                        và vận hành hệ thống.
+
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <!-- ==========================================
+                 SIDEBAR
+            =========================================== -->
+
+            <aside class="col-12 col-lg-4">
+
+                <div class="bg-white p-4 rounded shadow-sm">
+
+                    <h2 class="h4 text-primary fw-bold mb-3">
+                        Sidebar
+                    </h2>
+
+                    <div class="alert alert-info">
+
+                        Đây là khu vực thông tin phụ.
+
+                    </div>
+
+                    <h3 class="h5">
+                        Tin mới
+                    </h3>
+
+                    <ul class="list-group mb-4">
+
+                        <li class="list-group-item">
+                            Học Bootstrap Grid System
+                        </li>
+
+                        <li class="list-group-item">
+                            Xây dựng Navbar responsive
+                        </li>
+
+                        <li class="list-group-item">
+                            Thiết kế layout với Cards
+                        </li>
+
+                    </ul>
+
+                    <h3 class="h5">
+                        Thông tin
+                    </h3>
+
+                    <p class="text-secondary mb-0">
+
+                        Trên desktop Sidebar nằm cạnh Main Content.
+                        Trên màn hình nhỏ Sidebar sẽ chuyển xuống dưới.
+
+                    </p>
+
+                </div>
+
+            </aside>
+
+        </div>
+
+    </main>
+
+    <!-- ==================================================
+         CONTACT
+    =================================================== -->
+
+    <section
+        id="contact"
+        class="container pb-5">
+
+        <div class="bg-primary text-white text-center p-4 rounded">
+
+            <h2 class="h3 fw-bold">
+                Liên hệ
+            </h2>
+
+            <p class="mb-2">
+                Email: contact@example.com
+            </p>
+
+            <p class="mb-0">
+                Hotline: 0988 123 456
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ==================================================
+         FOOTER
+    =================================================== -->
+
+    <footer class="bg-dark text-white text-center py-4">
+
+        <div class="container">
+
+            <p class="mb-0">
+                &copy; 2026 Bootstrap Grid System Practice
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- Bootstrap JavaScript -->
+    <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+    </script>
+
+</body>
+
+</html>
